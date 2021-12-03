@@ -1,0 +1,20 @@
+﻿
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns ="https://webservice.asistiletisim.com.tr/SmsProxy">
+                                        <soapenv:Header/>
+                                           <soapenv:Body>
+                                             <getOriginator>
+                                                 <requestXml>
+													 <![CDATA[
+                                                        <GetOriginator>
+                                                                       <Username>{textBox1.Text}</Username>
+                                                                       <Password>{textBox2.Text}</Password>
+                                                                       <UserCode>{textBox3.Text}</UserCode>
+                                                                       <AccountId>{textBox4.Text}</AccountId>
+                                                        </GetOriginator>
+                                                   ]]>
+						                        </requestXml>
+                                              </getOriginator>
+                                           </soapenv:Body>
+                                        </soapenv:Envelope>
